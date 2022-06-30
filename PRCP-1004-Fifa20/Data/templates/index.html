@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fifa20 Clustering</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+
+<h2>Fifa20-Clustering</h2>
+        <form action="{{ url_for('predict')}}" method="post">
+            <div class="body_form">
+                <div class="left_side">
+
+                    <h3>Age</h3>
+                    <input id="first" name="age" type="number ">
+                    <br><br>
+                    <h3>Height in cm </h3><input id="second" name="height_cm" required="required">
+                    <br><br>
+                    <h3>Weight in kg</h3><input id="third" name="weight_kg" required="required" >
+                    <br><br>
+                    <h3>Overall Stats </h3><input id="fourth" name="overall" required="required">
+                    <br><br>
+                    <h3>Potential</h3><input id="fifth" name="potential" required="required">
+                    <br><br>
+                    <h3>Value Euro</h3><input id="sixth" name="value_eur" required="required">
+                    <br><br>
+                    <h3>Wage Euro </h3><input id="seventh" name="wage_eur" required="required">
+                    <br><br>
+                    <h3>Pace</h3><input id="eighth" name="pace" required="required">
+                    <br><br>
+                    <h3>Shooting</h3><input id="nineth" name="shooting" required="required">
+                    <br><br>
+                    <h3>Passing</h3><input id="tenth" name="passing" required="required">
+                    <br><br>
+                    <h3>Dribbling</h3><input id="eleventh" name="dribbling" required="required">
+                    <br><br>
+                    <h3>Defending</h3><input id="tweleth" name="defending" required="required">
+                    <br><br>
+                    <h3>Physic</h3><input id="thirthy" name="physic" required="required">
+                    <br><br>
+                    <h3>Attacking Crossing</h3><input id="fourty" name="attacking_crossing" required="required">
+                    <br><br>
+                    <h3>Attacking Finishing</h3><input id="fifty" name="attacking_finishing" required="required">
+                    <br><br>
+                    <h3>Attacking Heading Accuracy</h3><input id="sixty" name="attacking_heading_accuracy" required="required">
+                    <br><br>
+                    <h3>Attacking volleys</h3><input id="seventy" name="attacking_volleys" required="required">
+                    <br><br>
+                    <h3>Skill Dribbling</h3><input id="eighthty" name="skill_dribbling" required="required">
+                    <br><br>
+                    <h3>Skill Curve</h3><input id="ninety" name="skill_curve" required="required">
+                    <br><br>
+                    <h3>Skill Fk Accuracy</h3><input id="twenty" name="skill_fk_accuracy" required="required">
+
+
+
+
+                </div>
+                <div class="right_side">
+
+                    <h3>Skill Long Passing</h3>
+                    <input id="first" name="skill_long_passing" type="number ">
+                    <br><br>
+                    <h3>Movement Acceleration</h3><input id="second" name="movement_acceleration" required="required">
+                    <br><br>
+                    <h3>Movement Agility </h3><input id="third" name="movement_agility" required="required">
+                    <br><br>
+                    <h3>Movement Reactions </h3><input id="fourth" name="movement_reactions" required="required">
+                    <br><br>
+                    <h3>Movement Balance </h3><input id="fifth" name="movement_balance" required="required">
+                    <br><br>
+                    <h3>Power Shot</h3><input id="sixth" name="power_shot_power" required="required">
+                    <br><br>
+                    <h3>Power Jumping </h3><input id="nineth" name="power_jumping" required="required">
+                    <br><br>
+                    <h3>Power Strength</h3><input id="tenth" name="power_strength" required="required">
+                    <br><br>
+                    <h3>Power Long Shot</h3><input id="elevnth" name="power_long_shots" required="required">
+                    <br><br>
+                    <h3>Mentality Aggression</h3><input id="tweleth" name="mentality_aggression" required="required">
+                    <br><br>
+                    <h3>Mentality Vision</h3><input id="thirty" name="mentality_vision" required="required">
+                    <br><br>
+                    <h3>Mentality Penalties</h3><input id="fourty" name="mentality_penalties" required="required">
+                    <br><br>
+                    <h3>Mentality Composure</h3><input id="fifty" name="mentality_composure" required="required">
+                    <br><br>
+                    <h3>Defending Sliding Tackle</h3><input id="sixty" name="defending_sliding_tackle" required="required">
+                    <br><br>
+                    <h3>Goalkeeping Kicking</h3><input id="seventy" name="goalkeeping_kicking" required="required">
+                    <br><br>
+                    <h3>Power Stamina</h3><input id="seventy" name="power_stamina" required="required">
+                    <br><br>
+
+                    <h3>Preferred foot</h3><select name="preferred_foot_Right" id="dropdown" required="required">
+                        <option value="Right">Right</option>
+                        <option value="Left">Left</option>
+
+                    </select>
+                    <p/>
+                    <h3>International Reputation</h3><select name="international_reputation" id="dropdown" required="required">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <p/>
+                    <h3>weak_foot</h3><select name="weak_foot" id="dropdown" required="required">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <p/>
+                    <h3>Skill Moves</h3><select name="skill_moves" id="dropdown" required="required">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <p/>
+                    <h3>Team Position </h3><select name="team_position_SUB" id="dropdown" required="required">
+                        <option value="SUB">SUB</option>
+                        <option value="RES">RES</option>
+                        <option value="GK">GK</option>
+                        <option value="RCB">RCB</option>
+                        <option value="LCB">LCB</option>
+                        <option value="RB">RB</option>
+                        <option value="LB">LB</option>
+                        <option value="ST">ST</option>
+                        <option value="RCM">RCM</option>
+                        <option value="LCM">LCM</option>
+                        <option value="RM">RM</option>
+                        <option value="LM">LM</option>
+                        <option value="CAM">CAM</option>
+                        <option value="RDM">RDM</option>
+                        <option value="LDM">LDM</option>
+                        <option value="RS">RS</option>
+                        <option value="LS">LS</option>
+                        <option value="CDM">CDM</option>
+                        <option value="LW">LW</option>
+                        <option value="RW">RW</option>
+                        <option value="CB">CB</option>
+                        <option value="CM">CM</option>
+                        <option value="RWB">RWB</option>
+                        <option value="LWB">LWB</option>
+                        <option value="RAM">RAM</option>
+                        <option value="LAM">LAM</option>
+                        <option value="RF">RF</option>
+                        <option value="LF">LF</option>
+                        <option value="CF">CF</option>
+                    </select>
+                    <p></p><button id="sub" type="submit ">Prediction</button>
+                    <br>
+                </div>
+
+
+
+
+
+            </div>
+
+        </form>
+
+
+
+        <br><br><h3>{{pred}}<h3>
+
+
+
+
+    <style>
+        body {
+            text-align: left;
+            padding: 16px 32px;
+            background-color: #ffffff
+        }
+
+        .body_form {
+            display: flex;
+        }
+
+        .left_side {
+            color: black;
+            width: 50%;
+        }
+
+        .right_side {
+            color: black;
+            width: 50%;
+        }
+
+        h3 {
+            font-weight: normal;
+
+        }
+
+
+
+        #research {
+            font-size: 18px;
+            width: 100px;
+            height: 23px;
+            top: 23px;
+        }
+
+        #box {
+            border-radius: 12px;
+            border-color: 45px;
+            border-style: solid;
+            font-family: cursive;
+            text-align: center;
+            background-color: rgb(168, 131, 61);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+        }
+
+        #fuel {
+            width: 240px;
+            height: 43px;
+            text-align: center;
+            border-radius: 12px;
+            font-size: 20px;
+        }
+
+        #fuel:hover {
+            background-color: coral;
+        }
+
+        #research {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 12px;
+            font-size: 18px;
+        }
+
+        #research:hover {
+            background-color: coral;
+        }
+
+        #dropdown {
+            width: 240px;
+            height: 43px;
+            text-align: center;
+            border-radius: 12px;
+            font-size: 18px;
+        }
+
+        #resea:hover {
+            background-color: coral;
+        }
+
+        #sub {
+            height: 60px;
+            width: 240px;
+            margin: 64px 0px;
+            padding: 10px 16px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: royalblue;
+            color: white;
+            font-size: 18px;
+        }
+
+        #sub:hover {
+            background-color: SlateBlue;
+            cursor:pointer;
+
+        }
+
+        #first {
+            border-radius: 4px;
+            height: 40px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #second {
+            border-radius: 4px;
+            height: 40px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #third {
+            border-radius: 4px;
+            height: 40px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #fourth {
+            border-radius: 4px;
+            height: 40px;
+            font-size: 20px;
+            text-align: center;
+
+        }
+    </style>
+</body>
+
+</html>
