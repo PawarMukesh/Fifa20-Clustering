@@ -214,12 +214,6 @@ DOMAIN ANALYSIS OF FEATURE:
 ![image](https://user-images.githubusercontent.com/101791322/180657294-7e10a9a6-9d0a-4ebf-b7da-2d3208adc024.png)
 
 
-### COMPARE MESSI VS RONALDO
-short_name	        overall	potential	pace	shooting	passing	dribbling	defending	physic
-								
-* L. Messi        	94	     94	     87.0	  92.0	    92.0	  96.0	    39.0	   66.0
-* Cristiano Ronaldo	93	     93	     90.0	   93.0	    82.0	  89.0	    35.0	   78.0
-
 
 ## DATA PROCESSING & FEATURE ENGINEERING
 * Impute Missing value with median because feature is not normal distributed
