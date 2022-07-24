@@ -215,10 +215,10 @@ DOMAIN ANALYSIS OF FEATURE:
 
 
 ### COMPARE MESSI VS RONALDO
-	             overall	potential	pace	shooting	passing	dribbling	defending	physic
-short_name								
-L. Messi        	94	     94	     87.0	  92.0	    92.0	  96.0	    39.0	   66.0
-Cristiano Ronaldo	93	     93	     90.0	   93.0	    82.0	  89.0	    35.0	   78.0
+short_name	        overall	potential	pace	shooting	passing	dribbling	defending	physic
+								
+* L. Messi        	94	     94	     87.0	  92.0	    92.0	  96.0	    39.0	   66.0
+* Cristiano Ronaldo	93	     93	     90.0	   93.0	    82.0	  89.0	    35.0	   78.0
 
 
 ## DATA PROCESSING & FEATURE ENGINEERING
