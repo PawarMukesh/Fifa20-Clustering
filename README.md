@@ -191,10 +191,12 @@ DOMAIN ANALYSIS OF FEATURE:
 * LWB:Left Wing Back
 * LDM:Left defensive midfield
 * CDM:Center defensive midfield
-* RDM:
 * Right defensive midfield
 * RWB:Right wing back
 * LB:Left back
 * LCB:Left center back
 * CB:Center back
 * RCB:Right center back
+
+![image](https://user-images.githubusercontent.com/101791322/180654758-904fd0d1-9dbe-48e8-a7b3-4bcbed2f1a4d.png)
+
