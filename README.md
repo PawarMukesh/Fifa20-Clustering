@@ -200,3 +200,41 @@ DOMAIN ANALYSIS OF FEATURE:
 
 ![image](https://user-images.githubusercontent.com/101791322/180654758-904fd0d1-9dbe-48e8-a7b3-4bcbed2f1a4d.png)
 
+## EXPLOTARY DATA ANALYSIS
+### 1.TOP 10 NATIONALITY PLAYER
+
+![image](https://user-images.githubusercontent.com/101791322/180657249-f5771c3f-32eb-416d-b0cc-9f910d583bc3.png)
+
+### 2.TOP 10 CLUB PLAYER
+
+![image](https://user-images.githubusercontent.com/101791322/180657271-6dee3b14-c8c3-4157-a4ec-577868e14a65.png)
+
+### 3.TEAM POSITION IN TOP 10
+
+![image](https://user-images.githubusercontent.com/101791322/180657294-7e10a9a6-9d0a-4ebf-b7da-2d3208adc024.png)
+
+
+### COMPARE MESSI VS RONALDO
+	             overall	potential	pace	shooting	passing	dribbling	defending	physic
+short_name								
+L. Messi        	94	     94	     87.0	  92.0	    92.0	  96.0	    39.0	   66.0
+Cristiano Ronaldo	93	     93	     90.0	   93.0	    82.0	  89.0	    35.0	   78.0
+
+
+## DATA PROCESSING & FEATURE ENGINEERING
+* Impute Missing value with median because feature is not normal distributed
+* Handling categorical data with mannual encoding
+* Handling outlier with Empherical rule and IQR.
+* Scaling the data with the help of min-max scaler
+
+
+## FEATURE SELECTION
+* Drop unique and constant column
+* Remove highly correalted feature, In this data lots of highly correlated feature is available.
+* Their is no duplicate is present.
+* At last apply PCA to reduce the dimension of feature.
+
+## MODEL CREATION AND EVALUATION
+* He we are use K-means algorithm to make cluster/group.
+* With 3 cluster sillhoutte score is 0.61
+* With 5 cluster sillhoutte score is 0.50
