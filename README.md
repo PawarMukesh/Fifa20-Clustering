@@ -167,7 +167,7 @@ DOMAIN ANALYSIS OF FEATURE:
 
 * GOALKEEPING REFLEX:The reflex of goalkeeper and players.
 
-THE REMAINING FEATURE IS THE ABBREVATION OF FOOTBALL POSITION SCORE:
+### THE REMAINING FEATURE IS THE ABBREVATION OF FOOTBALL POSITION SCORE:
 * LS:Long snapper or left striker.
 * ST:Striker
 * RS:Right striker
@@ -189,8 +189,8 @@ THE REMAINING FEATURE IS THE ABBREVATION OF FOOTBALL POSITION SCORE:
 * CDM:Center defensive midfield
 * RDM:
 * Right defensive midfield
-RWB:Right wing back
-LB:Left back
-LCB:Left center back
-CB:Center back
-RCB:Right center back
+* RWB:Right wing back
+* LB:Left back
+* LCB:Left center back
+* CB:Center back
+* RCB:Right center back
